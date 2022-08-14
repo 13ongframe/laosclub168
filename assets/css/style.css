@@ -650,7 +650,11 @@ html , body{
 /* Section Blog End */
 
 
-
+/* Section Casino */
+.logocasino img{
+    max-width: 100px;
+    max-height: 100px;
+}
 
 
 
@@ -660,7 +664,7 @@ html , body{
 	padding: 25px;
     transition: 0.5s;
     background: var(--black);
-    
+    s
 }
 
 .logo-game-footer {

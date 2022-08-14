@@ -1,4 +1,87 @@
+       /*--------------------------- slick Carousel ----------------------------*/
+
+    //    ********Slide Casino**********
+       $(document).ready(function(){
+        $('.slide-show').slick({
+            lazyLoad: 'ondemand',
+            arrows: false,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 5,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  arrows: false
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+            ]
+          });
+        });
+    
+        
+    //    ********Slide Slot**********
+    $(document).ready(function(){
+        $('.slide-showslot').slick({
+            lazyLoad: 'ondemand',
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 5,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 4,
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 3,
+                }
+              }
+    
+            ]
+          });
+        });    
+
+      
+        
 /*----------------------- menu ---------------------*/
+
+// const { Carousel } = require("bootstrap");
 
 
 $( window ).on('scroll', function(){
@@ -12,6 +95,8 @@ $( window ).on('scroll', function(){
 
 
 /*-----------------------end menu ---------------------*/
+
+
 
 
 /*------------------------ typing writter-----------------------*/
@@ -72,6 +157,8 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
 
 
 // =============================Modal Login================================
