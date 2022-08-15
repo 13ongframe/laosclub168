@@ -16,6 +16,7 @@
 
 :root{
     --gradient:linear-gradient(to bottom right, red, blue);
+    /* --gradient:linear-gradient(to bottom right, red,white 50%, blue); */
     --red:red;
     --blue:blue;
     --black:rgb(32 33 36);
@@ -68,6 +69,7 @@ html , body{
 .heading span{
     font-size: 2rem;
   background: -webkit-linear-gradient(red, blue);
+  /* background: -webkit-linear-gradient(red,white, blue); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -235,8 +237,8 @@ html , body{
     width: 100%;
 	height: 65px;
 	background: var(--gradient);
-    border-top: 2px solid #ffc812;
-	box-shadow: 0 0 15px #ffae00;
+    /* border-top: 2px solid #ffc812;
+	box-shadow: 0 0 15px #ffae00; */
     padding: 0 0;
 	transition: 1s;
 }
@@ -274,8 +276,8 @@ html , body{
 	transform: translate(-50%,-50%);
 	width: 70px;
 	height: 70px;
-	border: 2px solid #ffc812;
-	box-shadow: 0 0 15px #ffae00;
+	/* border: 2px solid #ffc812; */
+	/* box-shadow: 0 0 15px #ffae00; */
 	border-radius: 50%;
 	margin-top: -36px;
 	z-index: 1;
@@ -289,7 +291,11 @@ html , body{
 /* 3.Section Hero */
 
 .hero{
-    margin-top: 150px;
+    margin-top: 80px;
+    padding: 1rem;
+}
+
+.box-hero{
     background: var(--black);
     box-shadow: var(--black-shadow);
     border-radius: 2rem;
@@ -479,7 +485,7 @@ html , body{
     border: none;
     background: var(--white);
     box-shadow: var(--white-shadow);
-    width: 100%;
+    /* width: 100%; */
     padding: 0 20px 0 20px;
     transition: .5s;
 }
@@ -913,7 +919,132 @@ html , body{
     transform: scale(1.1);
 }
 
+/* =======================================blog page======================================== */
 
+
+.text-blogpage h2{
+    background: -webkit-linear-gradient(red, blue);
+  /* background: -webkit-linear-gradient(red,white, blue); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.img-blogpage img{
+   
+    border-radius: 1.5rem;
+    padding: 1rem;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-blogpage img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    opacity: 80%;
+}
+
+/* blog-page------->>>> border section*/
+
+.section-box{
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.section-box > span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--gradient);
+	z-index: 100;
+	animation: animatesectionbox1 2s linear infinite;
+}
+@keyframes animatesectionbox1
+{
+	0%
+	{
+		transform: translateX(-100%);
+	}
+	100%
+	{
+		transform: translateX(100%);
+	}
+}
+
+.section-box > span:nth-child(2){
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: var(--gradient);
+	z-index: 100;
+	animation: animatesectionbox2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animatesectionbox2
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+
+
+.section-box > span:nth-child(3){
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--gradient);
+	z-index: 100;
+	animation: animatesectionbox3 2s linear infinite;
+}
+@keyframes animatesectionbox3
+{
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+
+
+.section-box > span:nth-child(4){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: var(--gradient);
+	z-index: 100;
+	animation: animatesectionbox4 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animatesectionbox4
+{
+	0%
+	{
+		transform: translateY(100%);
+	}
+	100%
+	{
+		transform: translateY(-100%);
+	}
+}
+
+
+/* blog-page------->>>> end-border section*/
 
 
 /************************************ Modal login************************************/

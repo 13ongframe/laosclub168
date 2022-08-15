@@ -299,3 +299,32 @@ function close_ads_bt(e){$(this).on('click',function(){$('.c_ads-bottom').hide()
 
 function buttonlogin(e){$(this).on('click',function(){$('#ModalLogin').attr('block')})}
 function close_ads_bt(e){$(this).on('click',function(){$('.c_ads-bottom').show()})}
+
+
+// ---------------------------- Swal2 popup กิจกรรมประจำเดือนนี้ และ popup เข้าเว็บครั้งแรก --------------------------  
+
+// popup โหลดเว็บครั้งแรก 
+setTimeout(()=>{
+    Swal.fire({
+title: 'กิจกรรมประจำเดือนนี้',
+text: 'อย่ารอช้า ! ร่วมสนุกและลุ้นรับของรางวัลอีกมากมาย',
+imageUrl: 'assets/image/pro-7.png',
+imageWidth: 512,
+imageHeight: 512,
+imageAlt: 'กิจกรรม',
+confirmButtonColor: '#000',
+confirmButtonText:'รับทราบ',
+})   
+},2000);
+
+// popup คลิก icon กิจกรรมประจำเดือนนี้
+function SW(){
+    Swal.fire({
+title: 'กิจกรรมประจำเดือนนี้',
+text: 'อย่ารอช้า ! ร่วมสนุกและลุ้นรับของรางวัลอีกมากมาย',
+imageUrl: 'assets/image/pro-5.png',
+imageAlt: 'กิจกรรม',
+confirmButtonColor: '#000',
+confirmButtonText:'รับทราบ',
+})   
+}
