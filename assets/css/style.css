@@ -37,8 +37,12 @@
     
 }
 
-html , body{
+body{
     background: #000;
+    background-image: url("assets/image/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
 }
 
@@ -315,7 +319,7 @@ html , body{
 	animation: animate 5s linear infinite;
 }
 
-@media and screen (max-width: 769){
+@media screen and (max-width: 769){
     .imgHero img{
         max-width: 400px;}
     }
